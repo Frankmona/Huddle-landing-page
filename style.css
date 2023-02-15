@@ -54,6 +54,10 @@ button:hover{
     color: white;
 }
 
+img{
+    width: 50%;
+}
+
 .row{
     display: flex;
     gap: 2rem;
@@ -94,4 +98,50 @@ button:hover{
     display: flex;
     gap: 1rem;
     justify-content: right;
+  }
+
+
+
+  @media screen  and (max-width: 414px){
+
+    body{
+        background-color: hsl(257, 40%, 49%);
+        background-image: url(./images/bg-mobile.svg);
+        position: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .container{
+        margin: 10px;
+        padding-left: 10px;
+    }
+    
+    .in_text_section{
+        /* padding: 10px; */
+        text-align: center;
+    }
+
+    .text_section{
+        color: white;
+        width: 350px;
+        height: 250px;
+        /* background-color: blue; */
+        font-family: 'Open Sans';
+    }
+
+    .icon_row{
+        padding-top: 40px;
+        justify-content: center;
+      }
+
+      img{
+        width: 80%;
+    }
   }
